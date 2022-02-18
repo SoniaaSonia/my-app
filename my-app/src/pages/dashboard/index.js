@@ -78,12 +78,12 @@ const Dashboard = () => {
           <div className="col-sm-12">
             <div className="card">
               <div className="card-body">
-                <div class="d-md-flex">
-                  <h4 class="card-title col-md-10 mb-md-0 mb-3 align-self-center">
+                <div className="d-md-flex">
+                  <h4 className="card-title col-md-10 mb-md-0 mb-3 align-self-center">
                     Projects of the Month
                   </h4>
-                  <div class="col-md-2 ms-auto">
-                    <select class="form-select shadow-none col-md-2 ml-auto">
+                  <div className="col-md-2 ms-auto">
+                    <select className="form-select shadow-none col-md-2 ml-auto">
                       <option selected>January</option>
                       <option value="1">February</option>
                       <option value="2">March</option>

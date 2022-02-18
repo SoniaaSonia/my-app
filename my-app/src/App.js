@@ -13,6 +13,7 @@ import NotFound from "./pages/error";
 import Login from "./pages/login";
 import Profile from "./pages/profile";
 import User from "./pages/user";
+import Data from "./pages/userData/data";
 
 function App() {
   const admin = localStorage.getItem("adminToken");
@@ -36,6 +37,8 @@ function App() {
           >
             <PrivateRoute path="/" exact component={Dashboard} />
             <PrivateRoute path="/user" exact component={User} />
+            <PrivateRoute path="/data" exact component={Data} />
+
             <Route
               path="/profile"
               exact

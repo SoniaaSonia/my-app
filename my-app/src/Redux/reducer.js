@@ -1,13 +1,13 @@
-import { DELETE } from "./type";
+import { GET_DATA } from "./type";
 
-const initialState = { formValues: "" };
+const initialState = { users: [] };
 
 export const dataReducer = (state = initialState, action) => {
   switch (action.type) {
-    case DELETE:
+    case GET_DATA:
       return {
         ...state,
-        list: state.formValues.filter((item) => item.id !== action.id),
+        users: action.payload,
       };
     default:
       return state;
